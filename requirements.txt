@@ -3,3 +3,4 @@ numpy
 duckdb
 matplotlib
 seaborn
+pyarrow
