@@ -1,0 +1,32 @@
+{
+  "model": "LSTM Baseline",
+  "auroc": 0.7622,
+  "auprc": 0.7805,
+  "n_train": 2193,
+  "n_val": 732,
+  "n_test": 736,
+  "n_features": 16,
+  "feature_cols": [
+    "Arterial Blood Pressure mean",
+    "GCS - Motor Response",
+    "GCS - Verbal Response",
+    "Heart Rate",
+    "Non Invasive Blood Pressure diastolic",
+    "Non Invasive Blood Pressure systolic",
+    "O2 saturation pulseoxymetry",
+    "PEEP set",
+    "Respiratory Rate",
+    "Bilirubin, Total",
+    "Creatinine",
+    "Lactate",
+    "Platelet Count",
+    "Urea Nitrogen",
+    "pH",
+    "pO2"
+  ],
+  "hidden_size": 128,
+  "num_layers": 2,
+  "dropout": 0.5,
+  "epochs_ran": 15,
+  "best_val_loss": 0.4902
+}
