@@ -4,3 +4,5 @@ duckdb
 matplotlib
 seaborn
 pyarrow
+torch
+scikit-learn
