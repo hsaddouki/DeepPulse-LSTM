@@ -1,5 +1,5 @@
 {
-  "model": "LSTM Baseline",
+  "model": "LSTM Base",
   "auroc": 0.7622,
   "auprc": 0.7805,
   "n_train": 2193,

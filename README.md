@@ -103,9 +103,9 @@ TFM_DeepLearning/
 │   └── icu/           # Datos UCI (MIMIC-IV icu module)
 ├── notebooks/
 │   └── 01_data_analysis.ipynb   # Análisis y extracción de datos
+|   └── 02_baseline_model.ipynb  # Entrenamiento y evaluación del modelo
 ├── src/               # Código fuente (pipelines, modelos)
 ├── models/            # Modelos entrenados
-├── outputs/           # Resultados y métricas
 └── results/           # Visualizaciones
 ```
 
@@ -114,17 +114,25 @@ TFM_DeepLearning/
 ## TODO
 
 ### 1 — Data Analysis & Extraction
-- [ ] Convertir todo el proceso del notebook 1 a una Pipeline
-- [ ] Analizar outliers, NaNs y estrategia de imputación
-- [ ] Evaluar uso de `sepsis3` (tabla derivada MIMIC-IV) como onset más preciso que `intime`
-- [ ] Comparar ventanas de 24h vs 48h
+- [X] Convertir todo el proceso del notebook 1 a una Pipeline
+- [X] Analizar outliers, NaNs y estrategia de imputación
+- [X] Evaluar uso de `sepsis3` (tabla derivada MIMIC-IV) como onset más preciso que `intime`
+- [X] Comparar ventanas de 24h vs 48h
 
 ### 2 — Modelo LSTM
-- [ ] Diseño de arquitectura LSTM
-- [ ] Definir estrategia de padding/masking para series de longitud variable
-- [ ] Validación cruzada por paciente (evitar data leakage)
+- [X] Diseño de arquitectura LSTM
+- [X] Definir estrategia de padding/masking para series de longitud variable
+- [X] Validación cruzada por paciente (evitar data leakage)
+- [X] Métricas: AUROC, AUPRC, sensibilidad, especificidad
+
+### 3 - Mejorar modelo LSTM y Hiperparámetros
+- [ ] Implementar modelo bidireccional
+- [ ] Ejecutar varias instancias con diferentes hiperparámetros
+- [ ] Evaluar rendimiento de los diferentes hiperparámetros
+- [ ] Elegir modelo final con hiperparámetros optimizados
 - [ ] Métricas: AUROC, AUPRC, sensibilidad, especificidad
 
-### 3 — Evaluación
-- [ ] Comparativa con baseline (regresión logística, XGBoost)
-- [ ] Análisis de importancia de features (SHAP)
+### 4 - Implementar XAI
+- [ ] Investigar implementación de diferentes opciones (SHAP o LIME)
+- [ ] Implementar eleccion de XAI
+- [ ] Demostrar efectividad de XAI
